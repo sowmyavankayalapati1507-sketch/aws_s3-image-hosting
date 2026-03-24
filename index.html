@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS S3 Image Hosting</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            padding: 20px;
+            font-size: 32px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            width: 320px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background: #ff7a18;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background: #ffb347;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AWS S3 Image Hosting App</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2> Public Image</h2>
+            <img src="https://photoclub-sowmya-2026.s3.ap-south-1.amazonaws.com/public/Nature.jpg">
+            <p>This image is publicly accessible.</p>
+        </div>
+
+        <div class="card">
+            <h2>Private Image</h2>
+            <p>Access private image using secure link:</p>
+            <a href="https://photoclub-sowmya-2026.s3.ap-south-1.amazonaws.com/private/personal.jpg?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEND%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRzBFAiAZEisiqPEMkUf%2FU%2BjBHelE023VtB%2B5ugIYOT9nBhbdSwIhAPnsKOZWnVx3QgC8ZCOrTpl2QsL5j5e9KaEsPafQWY0rKsIDCJn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTY1OTAxNTYyMDcyIgxyF3zuctIJldwUeYgqlgOD5GzhpwMjjeyyBHneLsj6mOQ4WBgCN%2BEJhoPPejQuSpldLi3GgMqTiDVYIKwA77jEgfeSYGGZQv2xZOA5m9L9DrhwqhUcSD3oNibV5S5lDmfpmWlFyHbmzzV1sb7gXC%2FhdxiLNzHJLClLFld1nnWL4%2B4Ea9udPBVg5wF5UrkerYfXUCm2BStD%2BBhcb6jAC6natqVJbTozE2sOsaIrrSvk0zIZL1RPqag3LKMsNpN%2Fl8XcCA9DDpBKltXWt21mVYFfTqhy7jy4DwvD4NI1Dsmz0kGSGGe8F8aGlPXrqTeSXy%2FlcPqPrS1CDeCKPqZBOhzrRUyPEULSx1WoNviDZP0%2F4p3rL9f5IDYwC7uyj2nl71HRQnHe6yqZ8OzH9TUgEvcV9AX2OirLBPMOURRHkzylx4Qux6VkcGKsyS9%2BsdJ%2FNltoySc3MATX8DhgkXR4xewr5NeSPv%2FF%2F8bFTd9%2BLsnSTpGbJSme4iRwvAcQzDgHuErGszArjCf4ube3EIOYBJNRO4APg%2BupZO3jUuK1A5Oh%2FaDAoeVDMOzFis4GOt4C%2FdUUNt%2BzaOGQ5R41zqGxWwZHiVWTXzfUZ6BIgc1UAcHu9utRRrDueVOxcsmqs6X1YLAu%2BNv98qxsk3iz2ODmqUJfiZw1zmh8QXhR58cN57MUmElFfijU9gLqXa2jcAEH8izMkZrHd%2B%2BZmaLt90Ux6lPFCicdgsMekvmUDHeMKhUzmDO%2BC0L8oiNl%2FWF9nn9F2OTSc80xoe8eh4vf3YqP6rlyoGABI1Enr1AUgWVRRJ45KWyMZskh53SaECyVI3SI4VYpghYOjkznarCeKiuMJ%2FNMbqsOOtA8FGwlvCd%2F3H5rIOx4t7O8MAOWd2cZMVj8Ovwj7PxY0cvhFk6ZVh2q1GXCiyJJTVl%2FbJrpzOfeHtVHu7UoRfRziOpf7m5o0CSe3sSA7rYKVewVF9fyF%2BKMMWBH3CCOfUDkwWrat8S7ouK4V7kPd8AeC3dkz76Dvi7Q2IxToryTUi0c0%2BeW6ac%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYHQS4SDMDTOMUY3H%2F20260324%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260324T155159Z&X-Amz-Expires=5400&X-Amz-SignedHeaders=host&X-Amz-Signature=6fa49af504cd3b0e688ad6c082e3122dc41695cfb50094246e993fd61cb4f825" target="_blank">View Private Image</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
