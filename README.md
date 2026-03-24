@@ -20,10 +20,10 @@ This project demonstrates a secure image hosting solution using Amazon S3. It al
 ## Project Structure
 
 photoclub-sowmya-2026/
-|___ public/
-│     └── Nature.jpg
-│── private/
-└── personal.jpg
+ public/
+      └── Nature.jpg
+ private/
+      └── personal.jpg
 
  ## Security
 
