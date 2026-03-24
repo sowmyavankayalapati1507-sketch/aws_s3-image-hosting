@@ -38,9 +38,8 @@ photoclub-sowmya-2026/
 * Pre-signed URL allows temporary access
 
 
-##  Screenshots
 
-(Add screenshots here)
+
 
 
 ##  Conclusion
