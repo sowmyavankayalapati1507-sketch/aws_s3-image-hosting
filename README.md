@@ -48,7 +48,7 @@ The `index.html` file is used to display images from AWS S3 in a browser.
 ![Presigned URL](Screenshot%202026-03-24%20210520.png)
 
 ### HTML Output (AWS S3 Image Display)
-![Output](Screenshot%2026-03-24%20210054.png)
+![Output](Screenshot%2026-03-24%222339.png)
 
 ---
 
